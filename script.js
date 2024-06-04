@@ -12,12 +12,11 @@ formElement.addEventListener("submit", (e) => {
   const liEl = document.createElement("li");
 
   const deleteBtnEl = document.createElement("button");
-  deleteBtnEl.innerHTML = ' <i class="fa-solid fa-delete-left"></i>';
-
-  liEl.appendChild(deleteBtnEl);
+  deleteBtnEl.innerHTML = '<img src="images/delete.svg" alt="delete icon" />';
 
   liEl.textContent = inputElement.value;
   olEl.appendChild(liEl);
+  liEl.appendChild(deleteBtnEl);
   inputElement.value = "";
 });
 

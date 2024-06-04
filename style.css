@@ -1,3 +1,7 @@
 img {
-  width: 30px;
+  width: 25px;
+  margin-top: 5px;
+}
+button {
+  margin-left: 10px;
 }
