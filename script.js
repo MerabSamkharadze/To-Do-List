@@ -9,10 +9,13 @@ const removeAll = document.getElementById("removeAll");
 formElement.addEventListener("submit", (e) => {
   e.preventDefault();
   if (inputElement.value === "") return;
-  const liEl = document.createElement("li");
 
+  const liEl = document.createElement("li");
   const deleteBtnEl = document.createElement("button");
   deleteBtnEl.innerHTML = '<img src="images/delete.svg" alt="delete icon" />';
+  deleteBtnEl.addEventListener("click", () => {
+    liEl.remove();
+  });
 
   liEl.textContent = inputElement.value;
   olEl.appendChild(liEl);
