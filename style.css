@@ -4,4 +4,47 @@ img {
 }
 button {
   margin-left: 10px;
+  width: 80px;
+  height: 60px;
+  border: 2px solid rgba(172, 255, 47, 0.437);
+  background-color: antiquewhite;
+  border-radius: 30%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: bisque;
+  border: 2px solid rgba(19, 133, 19, 0.638);
+}
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 30px;
+
+  border: 5px solid rgba(13, 175, 13, 0.46);
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+ol {
+  margin-top: 100px;
+  margin-left: 100px;
+  z-index: 999;
+}
+ol li {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
 }
